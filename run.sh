@@ -4,9 +4,9 @@ set -e
 
 echo ""
 
-if [[ -z "${GITHUB_TOKEN}" ]]; then
+if [[ -z "${INPUT_NPMAUTHTOKEN}" ]]; then
   echo "@deeepvision:registry=https://npm.pkg.github.com" >> .npmrc
-  echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
+  echo "//npm.pkg.github.com/:_authToken=${INPUT_NPMAUTHTOKEN}" >> .npmrc
 fi
 
 echo "Install packages"
