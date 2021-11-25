@@ -1,0 +1,5 @@
+name: 'Typescript::Check'
+description: 'Runs compile and lint actions with Typescript code'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
